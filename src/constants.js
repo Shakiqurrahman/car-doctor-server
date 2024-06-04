@@ -10,3 +10,5 @@ export const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+
+export const serviceCollection = client.db('carDoctor').collection('services');

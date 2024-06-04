@@ -5,7 +5,7 @@ import routes from "./routes/routes.js";
 
 const port = process.env.PORT || 3000;
 
-connectDB()
+connectDB();
 app.get("/", (req, res) => {
   res.send("Hello Car Doctor!");
 });
